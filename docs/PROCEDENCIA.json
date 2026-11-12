@@ -1,7 +1,7 @@
 {
   "training_source": "auditoria_reproducibilidad/Paquete_Evidencia_Tecnica_sin_imagenes.zip!cnn_gradcam_api.py",
   "original_sha256": "e9e1c7da278686aba5cab7bca0ed9b89fa60018ad1ca9a45e63095c30f140342",
-  "state": "copia de saneamiento; no aprobada para publicacion",
+  "state": "versión saneada revisada, aprobada y publicada el 2026-11-12",
   "contributors": [
     "Durán García Sergio Israel",
     "Mallorquín Cabral Christian Javier",
@@ -9,7 +9,7 @@
     "Velásquez Irías Fausto Rafael"
   ],
   "license": "MIT",
-  "authorization": "Usuario confirma autorización del equipo para publicar y licenciar; elige MIT el 2026-11-12. Publicación concreta aún requiere revisión final.",
+  "authorization": "Usuario confirma autorización del equipo, elige MIT y autoriza expresamente la publicación del paquete revisado el 2026-11-12.",
   "current_weights": "validacion/actualizada_1: dos corridas nuevas con PyTorch 2.13.0 y Pillow 13.0.0, métricas y once pesos idénticos",
   "historical_metrics_reproduced": false
 }

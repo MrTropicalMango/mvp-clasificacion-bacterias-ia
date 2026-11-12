@@ -1,5 +1,7 @@
 # Saneamiento previo a GitHub — 12 de noviembre de 2026
 
+> Nota de publicación: este informe conserva el diagnóstico previo. El usuario revisó y autorizó el paquete; se publicó el 12 de noviembre de 2026 en https://github.com/MrTropicalMango/mvp-clasificacion-bacterias-ia .
+
 ## Dictamen
 
 Copia técnica saneada preparada para revisión. No se creó repositorio, no se publicó contenido y no se reemplazaron originales locales o de Drive. La licencia MIT fue elegida por el usuario, quien confirmó autorización del equipo para publicar y licenciar. La publicación del paquete concreto sigue pendiente de revisión y autorización expresa.

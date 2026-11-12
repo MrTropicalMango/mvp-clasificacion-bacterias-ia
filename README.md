@@ -1,8 +1,8 @@
 # MVP académico de clasificación presuntiva de bacterias
 
-Proyecto de titulación del Equipo 3013B, UNIR. Código preparado para revisión del portafolio personal de Octavio Mejía. Licencia MIT para el código; datos con atribución separada en NOTICE.md.
+Proyecto de titulación del Equipo 3013B, UNIR. Código publicado como parte del portafolio personal de Octavio Mejía. Licencia MIT para el código; datos con atribución separada en NOTICE.md.
 
-**Estado: candidato interno saneado; publicación pendiente de revisión y autorización expresa.**
+**Estado: publicado el 12 de noviembre de 2026 tras revisión y autorización expresa.**
 
 El prototipo compara centroides RGB y dos CNN pequeñas, muestra Grad-CAM y permite revisión humana. No es diagnóstico, no trabaja con datos de pacientes ni acredita validación clínica. La confianza es relativa al modelo y no una probabilidad clínica calibrada.
 

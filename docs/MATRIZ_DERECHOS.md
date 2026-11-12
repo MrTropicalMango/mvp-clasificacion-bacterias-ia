@@ -5,4 +5,4 @@
 - Pesos: evidencia interna de entrenamiento; excluidos de la distribución candidata. Su posible redistribución se revisa por artefacto.
 - Registros de revisión humana, SQLite, notas, capturas históricas y tesis: excluidos del paquete público.
 - Dependencias: licencias propias; inventario del entorno comprobado separado.
-- Permiso de crear/publicar repositorio: pendiente de revisión final del paquete concreto. La confirmación de derechos no se interpreta como orden de publicación.
+- Permiso de crear/publicar repositorio: otorgado expresamente por el usuario después de revisar el paquete el 2026-11-12. Publicación realizada en MrTropicalMango/mvp-clasificacion-bacterias-ia.
