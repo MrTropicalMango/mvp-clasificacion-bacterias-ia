@@ -1,0 +1,14 @@
+.venv*/
+__pycache__/
+*.pyc
+.env*
+!.env.example
+*.sqlite*
+runtime/
+dataset_piloto_bruto/
+resultados_cnn_cv5/
+resultados_us04_linea_base/
+validacion/
+evidencia_*/
+*.zip
+*.pt

@@ -1,0 +1,12 @@
+/tmp/mvp_public_env/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_api_inference_and_linked_review (__main__.Regression.test_api_inference_and_linked_review) ... ok
+test_duplicate_human_records_block_close (__main__.Regression.test_duplicate_human_records_block_close) ... ok
+test_hash_tampering_is_rejected (__main__.Regression.test_hash_tampering_is_rejected) ... ok
+test_notebooks_are_clean_and_private (__main__.Regression.test_notebooks_are_clean_and_private) ... ok
+test_unique_human_records (__main__.Regression.test_unique_human_records) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.110s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "cnn_depthwise_fold3.pt": "47c23793a1aec036c7302040cf670d8c419a983ec9264ec4d15b0c8e4259d62e",
+  "cnn_estandar_fold2.pt": "cf30e16bcb8a35939a18e8cdbeaa3d0e3610c51d35e72349fb580b3389a32fc7",
+  "cnn_depthwise_fold2.pt": "18f6df901d859a366fdda10f352e9d2ef02c897db337f472adb28b476ca7650d",
+  "cnn_estandar_fold3.pt": "73b28c0613b302ea984c383fb5b57a8973ac6aa6ae750ac47e0841e4da1f95d8",
+  "cnn_depthwise_fold1.pt": "a0f7b3c731d91aa08d21cbb60e52a414704ca004eef552d61c933f3b522c86f0",
+  "cnn_depthwise_fold5.pt": "7731bcb8fc7b92b3bf2eddf773f9b15be3dd25f2fc53d7b3ebd097cac3820864",
+  "cnn_estandar_fold4.pt": "a617404db941c33ac819584d07e2dd89ed044f95428a5f035bc444e8d4508d4a",
+  "modelo_seleccionado.pt": "e20a37ae4d0e2eb0f00ede3abfe55ff8ca845c5f79f30aae30f0299774ba0826",
+  "cnn_depthwise_fold4.pt": "4368b292d172d42a3f6c5c7d1de36d9e2f1291db7ffa31ddad8da91aafe18391",
+  "cnn_estandar_fold5.pt": "f25d8963d7e83f956867ce22f95f69f4f359b6e849990b665dd9e6cc7b87c03d",
+  "cnn_estandar_fold1.pt": "d051bc9b38f9020671f042cc591376d5d411fa6900d9ed2d6c1d999268417e59"
+}

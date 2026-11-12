@@ -1,0 +1,43 @@
+{
+  "images": 295,
+  "unique_hashes": 295,
+  "classes": {
+    "Acinetobacter baumannii": 59,
+    "Actinomyces israelii": 59,
+    "Bacteroides fragilis": 59,
+    "Enterococcus faecalis": 59,
+    "Escherichia coli": 59
+  },
+  "folds": {
+    "1": 60,
+    "2": 60,
+    "3": 60,
+    "4": 60,
+    "5": 55
+  },
+  "hash_mismatches": [],
+  "source": "DOI 10.17632/cvkgfzp7ck.1; CC BY 4.0 según manifiesto",
+  "limits": [
+    "No se verifica independencia por muestra, paciente o microscopio",
+    "No se detectan duplicados visuales transformados mediante SHA-256"
+  ],
+  "pass": true,
+  "archive_hashes_match_historical_manifest": {
+    "Acinetobacter_baumannii.zip": true,
+    "Actinomyces_israelii.zip": true,
+    "Bacteroides_fragilis.zip": true,
+    "Enterococcus_faecalis.zip": true,
+    "Escherichia_coli.zip": true
+  },
+  "image_metadata_keys": {
+    "srgb": 311,
+    "exif": 311
+  },
+  "images_with_exif": 311,
+  "exif_subfields": {
+    "ColorSpace": 311,
+    "ExifImageWidth": 311,
+    "ExifImageHeight": 311
+  },
+  "exif_text_fields_present": []
+}

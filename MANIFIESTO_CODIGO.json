@@ -1,0 +1,146 @@
+{
+  "README.md": {
+    "bytes": 5812,
+    "sha256": "9dcae971188ff0e28f45f4e5167135ec2a9b8e2e853ae0b8b7d6e718281554dc"
+  },
+  "LICENSE": {
+    "bytes": 1190,
+    "sha256": "a2f8e14c31c57b1ea11eba9a3361967979893f88074d36849a0d41eb2f7f5dd6"
+  },
+  "NOTICE.md": {
+    "bytes": 1358,
+    "sha256": "67c57b54b63277c954461c8f462866d9559e4567fbb6df4f9f6deafc73d1dde0"
+  },
+  ".gitignore": {
+    "bytes": 172,
+    "sha256": "de9e2105184115c85ffdeb55e0be0cf06b43604118a9cbda9ed131c16dbefb9d"
+  },
+  "requirements_mvp_cnn.txt": {
+    "bytes": 115,
+    "sha256": "8353bf1819c0c7c98b5d5f67646466a719aaecbaef603c08e5769a92a726fe41"
+  },
+  "requirements-demo.txt": {
+    "bytes": 113,
+    "sha256": "6af583d3ed362d8f60def11dd29889ac86aeb74c78dcea36067623ee2dabb3e6"
+  },
+  "requirements-lock-macos-arm64-py312.txt": {
+    "bytes": 506,
+    "sha256": "fd7302bd4c9f4e8dfe3b2fddfad6038608017dec213a6a127c4f16d04518a5f7"
+  },
+  "cnn_gradcam_api.py": {
+    "bytes": 11774,
+    "sha256": "ef3a37883d4f4ff647da2ea6bfbb77faef1361f8148dd6dc7022150ee1e34a05"
+  },
+  "mvp_runtime.py": {
+    "bytes": 3099,
+    "sha256": "ff0f65b14fc51b8f373665657a74da410e873918ccdaae79a8a445df8a416bef"
+  },
+  "api_mvp.py": {
+    "bytes": 5151,
+    "sha256": "ac286ac7f0f0dd3f5ec7cd8c3f4061e101346785ba120df42551c4dc18dc30f4"
+  },
+  "demo_mvp.py": {
+    "bytes": 1528,
+    "sha256": "a6994a92d30a668b1cc0143d4133c25f6f3ae41ab62333a3d8619ac44c51b864"
+  },
+  "entrenar_linea_base_us04.py": {
+    "bytes": 8218,
+    "sha256": "bf8453df71bab79952df3b3ef906b35c9ca1126230f31f87bb4b7d7d54f33b93"
+  },
+  "ejecutar_us08.py": {
+    "bytes": 7871,
+    "sha256": "c93173b2f1e17909962efd093706390b0f5ec3601e2f3e0e0f69262ff289ba18"
+  },
+  "verificar_reproduccion.py": {
+    "bytes": 1445,
+    "sha256": "6a7eab5353503ec8a00dadb9bfb18d36e089381a8da2a070b1991a64273c5408"
+  },
+  "preparar_paquete_revision.py": {
+    "bytes": 2772,
+    "sha256": "3344dd3238e9e15b708e22b686ca02addc2eba811ca2261732bd6f2dde92e06e"
+  },
+  "prototipo_mvp/index.html": {
+    "bytes": 4678,
+    "sha256": "c2245f30411a6675b81ade58271c40733f17ea19252fce8b1129b277bc005b24"
+  },
+  "prototipo_mvp/evaluar_validacion_us11_us12.py": {
+    "bytes": 3788,
+    "sha256": "2386b7b4d3e46c388169cbe099c1d72907048ac7e7e53f5349b2a461533a6500"
+  },
+  "tests/test_saneamiento.py": {
+    "bytes": 3920,
+    "sha256": "aa3f92c53f3aa0e287dd94eec5318cca3836622a7dcabdab9011e6c19d47fda5"
+  },
+  "configs/weights_sha256.json": {
+    "bytes": 1054,
+    "sha256": "1eea1b5bcc0843ac479b28bcac0ed28d9bc6fe26cbd7fd223cddf56b2b275803"
+  },
+  "docs/PROCEDENCIA.json": {
+    "bytes": 824,
+    "sha256": "530e35eb344ec54ea04095f35846cbccfb423d7b57215bcb6ca551426ecc0cbb"
+  },
+  "docs/MATRIZ_DERECHOS.md": {
+    "bytes": 796,
+    "sha256": "001cf758084d2a72ed605a9af59645adb7043a26d47fd319810b47999bd576e3"
+  },
+  "docs/INFORME_SANEAMIENTO.md": {
+    "bytes": 8097,
+    "sha256": "0d278337d96713d47ee22a3231588c60375962d43fc639ee296fc5f22193b9c1"
+  },
+  "docs/VALIDACION_DATOS.json": {
+    "bytes": 1051,
+    "sha256": "8829a5f412be7c37e5f1df415cfa5723658dc1174a23e33c15d3179bef451326"
+  },
+  "docs/AUDITORIA_DEPENDENCIAS_FINAL.json": {
+    "bytes": 1669,
+    "sha256": "19485f3c65e075b60331db3fde515c1b38284f866a454424eeae2db2c3f08609"
+  },
+  "docs/PRUEBAS_ENTORNO_LIMPIO.txt": {
+    "bytes": 843,
+    "sha256": "f11fcddb9203168823999c60361fbedf377b2124b7d9a5f636db3b00cdca68aa"
+  },
+  "docs/PRUEBA_NAVEGADOR.json": {
+    "bytes": 268,
+    "sha256": "3f6115a8f594f536f0e2ea910ce4606ec6a080d448a26c04ae3a2f6c66a365e8"
+  },
+  "docs/COMPARACION_REPRODUCCION.json": {
+    "bytes": 88,
+    "sha256": "bf971be13240c563ac3dd233c5b96aaa65841dc21feed1802ea3ec50d5466505"
+  },
+  "docs/RESULTADOS_NUEVOS.json": {
+    "bytes": 26070,
+    "sha256": "354fb57909e7ef6336a1bdf279b269aad0ae532e56bb1b30ca25f85635910926"
+  },
+  "notebooks/Demo_MVP_Colab.ipynb": {
+    "bytes": 1204,
+    "sha256": "4b4dd2202ba237b981a36ee4a46ae8822c2fe1c1f11ebda04eca492758252bb3"
+  },
+  "notebooks/Demo_MVP_Colab_Equipo_3013B.ipynb": {
+    "bytes": 1204,
+    "sha256": "4b4dd2202ba237b981a36ee4a46ae8822c2fe1c1f11ebda04eca492758252bb3"
+  },
+  "notebooks/Entrenar_MVP_CNN_Colab.ipynb": {
+    "bytes": 1209,
+    "sha256": "297e2e43970fb929c5c80f945d49eae3f6126c57edffa301e97c27e200b95909"
+  },
+  "notebooks/Entrenar_MVP_CNN_Colab_Reproduccion.ipynb": {
+    "bytes": 1107,
+    "sha256": "4d7c05f50197d5d5d2729d27862e01da48bd2cdf0339a09ec18dbb98bd4c2ea1"
+  },
+  "inventario_dataset_piloto/inventario_clases.csv": {
+    "bytes": 435,
+    "sha256": "e8aa4254896f8767d8795509f0638d14308b81688b87e6accd52a7b1d009ebfe"
+  },
+  "inventario_dataset_piloto/manifiesto_imagenes.csv": {
+    "bytes": 45774,
+    "sha256": "a1f163f82f9614641814e3184fa6fdfa91da39f543d432c3c0c735971fd588a6"
+  },
+  "inventario_dataset_piloto/particiones_cv5.csv": {
+    "bytes": 29243,
+    "sha256": "3ff0d7f8d11a71c600f20d0371ec5207eb6643b81d0862200fc7ac9c57009d58"
+  },
+  "inventario_dataset_piloto/subconjunto_piloto.csv": {
+    "bytes": 77090,
+    "sha256": "a1dad3da422870861d76f68eaf246699c4e530731c65140b093b5690edfb525a"
+  }
+}

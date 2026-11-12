@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MVP académico · Equipo 3013B</title>
+<style>body{font:17px system-ui;max-width:850px;margin:40px auto;padding:0 20px;background:#f5f8fa;color:#163046}section{background:white;padding:24px;margin:20px 0;border-radius:12px}button,select,input{font:inherit;margin:8px 0;padding:10px}img{max-width:100%}button{cursor:pointer}#status{white-space:pre-wrap}label{display:block}</style>
+<h1>Clasificación presuntiva de bacterias</h1><p>UNIR · Equipo 3013B · Demostración académica</p><p>No usar con datos de pacientes. Toda clasificación siempre es presuntiva y requiere revisión profesional.</p>
+<section id="dropzone" tabindex="0" aria-label="Arrastrar imagen o seleccionar archivo"><label>Imagen pública PNG/JPEG, entre 224 × 224 y 16 millones de píxeles, máximo 10 MB<input id="image" type="file" accept="image/png,image/jpeg"></label><button id="analyze">Analizar imagen</button><p id="status" role="status"></p><img id="heat" alt="Mapa Grad-CAM de la imagen consultada" hidden></section>
+<section><h2>Confianza relativa del modelo</h2><p id="explicacion-confianza">No es probabilidad calibrada ni certeza clínica. Grad-CAM muestra sensibilidad computacional, no causalidad.</p><fieldset id="review" disabled><legend>Revisión humana</legend><label>Acción<select id="action"><option value="confirmar">Confirmar</option><option value="corregir">Corregir</option><option value="no_concluyente">No concluyente</option></select></label><label>Clase final<select id="correction"><option value="">Seleccione clase</option></select></label><button id="save">Guardar revisión local</button></fieldset><p id="saved" role="status"></p></section>
+<script>
+const api='http://127.0.0.1:8000', labels=['Acinetobacter baumannii','Actinomyces israelii','Bacteroides fragilis','Enterococcus faecalis','Escherichia coli'];
+const $=id=>document.getElementById(id);let prediction=null;
+for(const label of labels){const option=document.createElement('option');option.value=label;option.textContent=label;$('correction').append(option);}
+$('dropzone').ondragover=e=>e.preventDefault();
+$('dropzone').ondrop=e=>{e.preventDefault();if($('image').disabled)return;$('image').files=e.dataTransfer.files;$('image').onchange();};
+$('dropzone').onkeydown=e=>{if(e.target===$('dropzone')&&['Enter',' '].includes(e.key)){e.preventDefault();$('image').click();}};
+$('image').onchange=()=>{prediction=null;$('review').disabled=true;$('heat').hidden=true;$('status').textContent='';};
+$('analyze').onclick=async()=>{
+ prediction=null;$('review').disabled=true;$('heat').hidden=true;$('saved').textContent='';
+ const file=$('image').files[0];if(!file){$('status').textContent='Seleccione una imagen';return;}
+ if(file.size>10*1024*1024){$('status').textContent='Máximo 10 MB';return;}
+ $('analyze').disabled=true;$('image').disabled=true;$('status').textContent='Analizando…';
+ try{const body=new FormData();body.append('file',file);const response=await fetch(api+'/predict',{method:'POST',body});const data=await response.json();if(!response.ok)throw Error(data.detail||'Error de inferencia');prediction=data;$('status').textContent=`Clase presuntiva: ${data.prediccion_presuntiva}. Confianza relativa: ${(100*data.confianza).toFixed(1)} %. Revisión profesional requerida.`;$('heat').src='data:image/png;base64,'+data.gradcam_png_base64;$('heat').hidden=false;$('review').disabled=false;}
+ catch(error){$('status').textContent='Inferencia no disponible: '+error.message;}
+ finally{$('analyze').disabled=false;$('image').disabled=false;}
+};
+document.addEventListener('keydown',e=>{if(!prediction||$('review').disabled||['INPUT','SELECT','TEXTAREA','BUTTON'].includes(e.target.tagName))return;const action={c:'confirmar',r:'corregir',n:'no_concluyente'}[e.key.toLowerCase()];if(action&&window.confirm('¿Registrar revisión '+action+'?')){$('action').value=action;$('save').click();}});
+$('save').onclick=async()=>{
+ if(!prediction)return;
+ const accion=$('action').value,final=$('correction').value;
+ if(accion==='corregir'&&!final){$('saved').textContent='Seleccione primero la clase final';return;}
+ const query=new URLSearchParams({prediction_id:prediction.prediction_id,accion,resultado_final:final});$('review').disabled=true;
+ try{const response=await fetch(api+'/review?'+query,{method:'POST'});const data=await response.json();if(!response.ok)throw Error(data.detail||'Error al guardar');$('saved').textContent='Revisión guardada localmente';prediction=null;}
+ catch(error){$('saved').textContent=error.message;$('review').disabled=false;}
+};
+</script></html>

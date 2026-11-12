@@ -1,0 +1,6 @@
+clase,archivo_zip,imagenes_originales,duplicados_binarios,imagenes_unicas,cumple_minimo_60,cumple_minimo_100
+Acinetobacter baumannii,Acinetobacter_baumannii.zip,60,1,59,True,False
+Actinomyces israelii,Actinomyces_israelii.zip,67,0,67,True,False
+Bacteroides fragilis,Bacteroides_fragilis.zip,65,0,65,True,False
+Enterococcus faecalis,Enterococcus_faecalis.zip,60,0,60,True,False
+Escherichia coli,Escherichia_coli.zip,59,0,59,False,False

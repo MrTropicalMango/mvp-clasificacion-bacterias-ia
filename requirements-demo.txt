@@ -1,0 +1,2 @@
+-r requirements_mvp_cnn.txt
+# Las demos usan el entorno del notebook y el motor compartido; no requieren Gradio.
